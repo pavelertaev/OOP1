@@ -6,9 +6,21 @@ public class People {
 
     People(String name , int dateOfBirth , String city,String job){
         this.city = city;
+        if(city == null){
+            this.city="Информация не указана";
+        }
         this.name=name;
+        if(name == null){
+            this.name="Информация не указана";
+        }
         this.dateOfBirth = dateOfBirth;
+        if(dateOfBirth<=0){
+            this.dateOfBirth=0;
+        }
         this.job=job;
+        if(job==null){
+            this.job="Информация не указана";
+        }
     }
 
 
