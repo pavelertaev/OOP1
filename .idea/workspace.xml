@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67fc672-66eb-4609-aa3f-14add21d2eed" name="Changes" comment="Задание выполнено ожидает проверки">
-      <change afterPath="$PROJECT_DIR$/src/Flower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Automobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +41,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/паша/IdeaProjects/Arrays",
+    "last_opened_file_path": "C:/Users/паша/IdeaProjects/OOP1",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -73,6 +75,9 @@
       <workItem from="1666202373410" duration="40000" />
       <workItem from="1666283503601" duration="44000" />
       <workItem from="1666426185068" duration="293000" />
+      <workItem from="1666426533616" duration="1241000" />
+      <workItem from="1666428113632" duration="135000" />
+      <workItem from="1666428263468" duration="7287000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит">
       <created>1666019832630</created>
@@ -95,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666027744625</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Задание выполнено ожидает проверки">
+      <created>1666426642824</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666426642824</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -2,13 +2,13 @@ public class Flower {
    private String flowerColor;
    private String country;
    private double cost;
-   String lifeSpan;
+   int lifeSpan;
 
-   void flowerInformation(){
+   public void flowerInformation(){
        System.out.println("Цветок- " + flowerColor + " , страна- " + country +  ", стоимость штуки- " + cost + " рублей , срок стояния- " + lifeSpan );
    }
 
-   Flower(String flowerColor,String country,double cost,String lifeSpan){
+   Flower(String flowerColor,String country,double cost,int lifeSpan){
        this.flowerColor=flowerColor;
        if(flowerColor == null){
            this.flowerColor="белый";
@@ -22,8 +22,8 @@ public class Flower {
            this.cost = 1;
        }
        this.lifeSpan=lifeSpan;
-       if(lifeSpan==null){
-           this.lifeSpan="3 дня";
+       if(lifeSpan<=0){
+           this.lifeSpan=3;
        }
    }
 

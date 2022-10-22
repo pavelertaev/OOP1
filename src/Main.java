@@ -1,3 +1,5 @@
+import transport.Automobile;
+
 public class Main {
     public static void main(String[] args) {
         //Создайте новый проект в IDEA. Создайте класс «Человек», у которого есть:
@@ -55,11 +57,11 @@ public class Main {
         //Hyundai Avante, сборка в Южной Корее, цвет кузова — оранжевый, объем двигателя — 1,6 л, год выпуска — 2016.
         //Напишите программу, которая будет выводить в консоль информацию о каждом автомобиле и все указанные выше характеристики.
         System.out.println("Задание 3");
-        Automobile granta = new Automobile("Lada","Granta",1.7,"желтый",2015,"Россия");
-        Automobile a8 = new Automobile("Audi","A8",3.0,"черный",2020,"Германия");
-        Automobile z8 = new Automobile("BMW","Z8",3.0,"черный",2021,"Германия");
-        Automobile sportage = new Automobile("Kia","Sportage 4-го поколения",2.4,"красный",2018,"Южная корея");
-        Automobile avante = new Automobile("Hyundai","Avante",1.6,"оранжевый",2016,"Южная корея");
+        Automobile granta = new Automobile("Lada","Granta",1.7,"желтый",2015,"Россия","х000хх000","автомат","седан",4,"летняя");
+        Automobile a8 = new Automobile("Audi","A8",3.0,"черный",2020,"Германия","х000хх000","автомат","седан",4,"летняя");
+        Automobile z8 = new Automobile("BMW","Z8",3.0,"черный",2021,"Германия","х000хх000","автомат","седан",4,"летняя");
+        Automobile sportage = new Automobile("Kia","Sportage 4-го поколения",2.4,"красный",2018,"Южная корея","х000хх000","автомат","седан",4,"летняя");
+        Automobile avante = new Automobile("Hyundai","Avante",1.6,"оранжевый",2016,"Южная корея","х000хх000","автомат","седан",4,"летняя");
         granta.carInformation();
         a8.carInformation();
         z8.carInformation();
@@ -85,20 +87,40 @@ public class Main {
         //Пион из Англии, стоимость штуки — 69,9 рублей, срок стояния — 1 день.
         //Гипсофила, страна происхождения — Турция, стоимость штуки — 19,5 рублей, срок стояния — 10 дней.
         System.out.println("Задание 4");
-        Flower roza = new Flower("Роза обыкновенна","Голландия",35.59,null);
-        Flower chrizantema = new Flower("Хризантема",null,15.00,"5 дней");
-        Flower pion = new Flower("Пион","Англия",69.90,"1 день");
-        Flower gipsofila = new Flower("Гипсофила","Турция",19.50,"10 дней");
+        Flower roza = new Flower("Роза обыкновенна","Голландия",35.59,0);
+        Flower chrizantema = new Flower("Хризантема",null,15.00,5);
+        Flower pion = new Flower("Пион","Англия",69.90,1);
+        Flower gipsofila = new Flower("Гипсофила","Турция",19.50,10);
         roza.flowerInformation();
         chrizantema.flowerInformation();
         pion.flowerInformation();
         gipsofila.flowerInformation();
 
-
-
+        printCostFlowers(roza,roza,roza,gipsofila,chrizantema);
 
 
     }
+    public static void printCostFlowers(Flower...flowers){
+        double totalCost= 0;
+        int minLifeSpan=Integer.MAX_VALUE;
+        for(Flower flower : flowers){
+            if(flower.lifeSpan<minLifeSpan){
+                minLifeSpan= flower.lifeSpan;
+            }
+            totalCost += flower.getCost();
+            printInfo(flower);
+        }
+        totalCost = totalCost * 1.1;
+        System.out.println(" Стоимость букета " + totalCost);
+        System.out.println("Срок стояния " + minLifeSpan);
+
+    }
+    private static void printInfo(Flower flower){
+        System.out.println("Цветок- " + flower.getFlowerColor() + " , страна- " + flower.getCountry() + ", стоимость штуки- " + flower.getCost() + " рублей , срок стояния- " + flower.lifeSpan);
+    }
+
+
+
 }
 
 
