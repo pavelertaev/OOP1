@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d67fc672-66eb-4609-aa3f-14add21d2eed" name="Changes" comment="1 задание">
+    <list default="true" id="d67fc672-66eb-4609-aa3f-14add21d2eed" name="Changes" comment="Задание выполнено ожидает проверки">
+      <change afterPath="$PROJECT_DIR$/src/Flower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People.java" afterDir="false" />
     </list>
@@ -40,7 +40,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/паша/IdeaProjects/Arrays",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
@@ -65,7 +67,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666019737776</updated>
-      <workItem from="1666019739093" duration="5918000" />
+      <workItem from="1666019739093" duration="5990000" />
+      <workItem from="1666197442499" duration="4499000" />
+      <workItem from="1666201968393" duration="8000" />
+      <workItem from="1666202373410" duration="40000" />
+      <workItem from="1666283503601" duration="44000" />
+      <workItem from="1666426185068" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит">
       <created>1666019832630</created>
@@ -81,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666023980333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Задание выполнено ожидает проверки">
+      <created>1666027744625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666027744625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="первый коммит" />
     <MESSAGE value="1 задание" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 задание" />
+    <MESSAGE value="Задание выполнено ожидает проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание выполнено ожидает проверки" />
   </component>
 </project>
