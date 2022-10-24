@@ -1,23 +1,28 @@
 package transport;
 
-public class Automobile {
-    private String brand;
-    private String model;
-    double engineVolume;
-    String color;
-    private int productionYear;
-    private String productionCountry;
-    String registerNumber;
-    String transmission;
+import java.time.LocalDate;
+
+public class Automobile extends Transport {
+
+    private double engineVolume;
+    private String registerNumber;
+    private String transmission;
     private String body;
     int numberOfSeat;
     String rubber;
+    private Key key;
+    private Insurance insurance;
 
 
 
 
     public void carInformation() {
-        System.out.println(brand + " " + model + " " + productionYear + " год выпуска , сборка " + productionCountry + "," + color + " цвет кузова , обьем двигателя - " + engineVolume + " л.");
+        System.out.println(getBrand() + " " + getModel() + " " + getProductionYear() +
+                " год выпуска , сборка " + getProductionCountry() + "," + getColor() +
+                " цвет кузова , обьем двигателя - " + getEngineVolume() + " л." +
+                "Регистрационный номер - " + getRegisterNumber() +  ".Коробка передач - " +
+                getTransmission() + ".Кузов - " + getBody() + ".Количество мест - " + getNumberOfSeat() + ".Резина - " + getRubber() +
+                ".Доступ - " + getKey() + ".Страховка -" + getInsurance());
     }
 
     public String getRubber() {
@@ -60,34 +65,17 @@ public class Automobile {
         this.registerNumber = registerNumber;
     }
 
-    public Automobile(String brand, String model, double engineVolume, String color, int productionYear, String productionCountry, String registerNumber, String transmission, String body, int numberOfSeat, String rubber) {
-        this.brand = brand;
-        if (brand == null) {
-            this.brand = "default";
-        }
-        this.model = model;
-        if (model == null) {
-            this.model = "default";
-        }
+    public Automobile(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed,String refill, double engineVolume,  String registerNumber, String transmission,
+                      String body, int numberOfSeat, String rubber,Key key,Insurance insurance) {
+        super( brand,  model, productionYear,  productionCountry,  color , maxSpeed,refill);
         this.engineVolume = engineVolume;
         if (engineVolume <= 0) {
             this.engineVolume = 1.5;
         }
-        this.color = color;
-        if (color == null) {
-            this.color = "белый";
-        }
-        this.productionYear = productionYear;
-        if (productionYear <= 0) {
-            this.productionYear = 2000;
-        }
-        this.productionCountry = productionCountry;
-        if (productionCountry == null) {
-            this.productionCountry = "default";
-        }
+
         this.registerNumber = registerNumber;
-        if (registerNumber == null){
-            this.registerNumber="х000хх000";
+        if (registerNumber == null) {
+            this.registerNumber = "х000хх000";
         }
         this.transmission = transmission;
         if (transmission == null) {
@@ -99,66 +87,36 @@ public class Automobile {
         }
         this.numberOfSeat = numberOfSeat;
         if (numberOfSeat <= 0) {
-            this.numberOfSeat =5;
+            this.numberOfSeat = 5;
         }
         this.rubber = rubber;
+        if (key == null) {
+            this.key = new Key();
+        } else
+            this.key = key;
+        if (insurance == null) {
+            this.insurance = new Insurance();
+        } else
+            this.insurance = insurance;
 
 
     }
 
-    public String getProductionCountry() {
-        if (productionCountry == null) {
-            this.productionCountry = "default";
-        }
-        return productionCountry;
+    @Override
+    public void toRefill() {
+        System.out.println("Заправить бензином если двигатель бензиновый, дизелем если двигатель дизельный и электричеством если электрокар");
     }
 
-    public void setProductionCountry(String productionCountry) {
-        this.productionCountry = productionCountry;
+    public Key getKey() {
+        return key;
     }
 
-    public int getProductionYear() {
-        if (productionYear <= 0) {
-            this.productionYear = 2000;
-        }
-        return productionYear;
+    public Insurance getInsurance() {
+        return insurance;
     }
 
-    public void setProductionYear(int productionYear) {
-        this.productionYear = productionYear;
-    }
-
-    public String getColor() {
-        if (color == null) {
-            this.color = "белый";
-        }
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        if (model == null) {
-            this.model = "default";
-        }
-        this.model = model;
-    }
-
-    public String getBrand() {
-        if (brand == null) {
-            this.brand = "default";
-        }
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setKey(Key key) {
+        this.key = key;
     }
 
     public double getEngineVolume() {
@@ -171,6 +129,7 @@ public class Automobile {
     public void setEngineVolume(double engineVolume) {
         this.engineVolume = engineVolume;
     }
+
     public boolean isCorrectRegisterNumber(){
         if(registerNumber.length()!=9){
             return false;
@@ -192,9 +151,70 @@ public class Automobile {
     }
 
     public static class Key{
-       // private final boolean remoteKeyEngine;
-        //private final boolean withoutKeyAccess;
+        private final boolean remoteKeyEngine;
+        private final boolean withoutKeyAccess;
+
+        public Key(boolean remoteKeyEngine, boolean withoutKeyAccess) {
+            this.remoteKeyEngine = remoteKeyEngine;
+            this.withoutKeyAccess = withoutKeyAccess;
+        }
+        public Key() {
+            this(false,false);
+        }
+
+        public boolean isRemoteKeyEngine() {
+            return remoteKeyEngine;
+        }
+
+        public boolean isWithoutKeyAccess() {
+            return withoutKeyAccess;
+        }
+    }
+    public static class Insurance{
+        private  final LocalDate expireDate;
+        private final double cost;
+        private final String number;
+
+
+        public Insurance(LocalDate expireDate, double cost, String number) {
+            if (expireDate == null) {
+                this.expireDate = LocalDate.now().plusDays(365);
+            } else {
+                this.expireDate = expireDate;
+            }
+            this.cost = cost;
+           if(number==null){
+               this.number="123456789";
+           }else {
+               this.number= number;
+           }
+
+        }
+        public Insurance(){
+            this(null,15_000,null);
+        }
+        public LocalDate getExpireDate() {
+            return expireDate;
+        }
+
+        public double getCost() {
+            return cost;
+        }
+
+        public String getNumber() {
+            return number;
+        }
+
+        public void checkExpireDate(){
+            if(expireDate.isBefore(LocalDate.now()) || expireDate.isEqual(LocalDate.now())){
+                System.out.println("Нужно срочно ехать оформлять новую страховку");
+            }
+        }
+        public void checkNumber(){
+            if(number.length()!=9){
+                System.out.println("Номер страховки некоректный");
+            }
+        }
 
     }
-
 }

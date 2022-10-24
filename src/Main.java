@@ -1,4 +1,6 @@
 import transport.Automobile;
+import transport.Bus;
+import transport.Train;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,16 +59,35 @@ public class Main {
         //Hyundai Avante, сборка в Южной Корее, цвет кузова — оранжевый, объем двигателя — 1,6 л, год выпуска — 2016.
         //Напишите программу, которая будет выводить в консоль информацию о каждом автомобиле и все указанные выше характеристики.
         System.out.println("Задание 3");
-        Automobile granta = new Automobile("Lada","Granta",1.7,"желтый",2015,"Россия","х000хх000","автомат","седан",4,"летняя");
-        Automobile a8 = new Automobile("Audi","A8",3.0,"черный",2020,"Германия","х000хх000","автомат","седан",4,"летняя");
-        Automobile z8 = new Automobile("BMW","Z8",3.0,"черный",2021,"Германия","х000хх000","автомат","седан",4,"летняя");
-        Automobile sportage = new Automobile("Kia","Sportage 4-го поколения",2.4,"красный",2018,"Южная корея","х000хх000","автомат","седан",4,"летняя");
-        Automobile avante = new Automobile("Hyundai","Avante",1.6,"оранжевый",2016,"Южная корея","х000хх000","автомат","седан",4,"летняя");
+        Automobile granta = new Automobile("Lada","Granta",2015,"Россия","желтый",200,"Бензиновый двигатель",1.6,"х000хх000","автомат","седан",4,"летняя",null,null);
+        Automobile a8 = new Automobile("Audi","A8",2020,"Германия","черный",260,"Бензиновый двигатель",3.0,"х000хх000","автомат","седан",4,"летняя",null,null);
+        Automobile z8 = new Automobile("BMW","Z8",2021,"Германия","черный",270,"Бензиновый двигатель",3.0,"х000хх000","автомат","седан",4,"летняя",null,null);
+        Automobile sportage = new Automobile("Kia","Sportage 4-го поколения",2020,"Южная корея","красный",250,"Бензиновый двигатель",3.0,"х000хх000","автомат","седан",4,"летняя",null,null);
+        Automobile avante = new Automobile("Hyundai","Avante",2016,"Южная корея","оранжевый",220,"Бензиновый двигатель",3.0,"х000хх000","Автомат","седан",4,"летняя",null,null);
         granta.carInformation();
         a8.carInformation();
         z8.carInformation();
         sportage.carInformation();
         avante.carInformation();
+        Train lastochka = new Train("Ласточка","В-910",2011,"Россия","Серый",301,"Дизельный двигатель",3500,4,"Белорусский вокзал","Минск Пассажирский",11);
+        Train leningrad = new Train("Ленинград","D-105",2019,"Россия","Зеленый",270,"Дизельный двигатель",1700,5,"Ленинградский вокзал","Ленинград-Пассажирский",8);
+        lastochka.printTrain();
+        leningrad.printTrain();
+        Bus paz = new Bus("Паз","автобус",2008,"Россия","белый",160,"Бензиновый двигатель");
+        Bus ikarus = new Bus("Икарус","автобус",2012,"Россия","желтый",180,"Бензиновый двигатель");
+        Bus mercedes = new Bus("Мерседес","автобус",2015,"германия","серый",200,"");
+        paz.printBus();
+        ikarus.printBus();
+        mercedes.printBus();
+        paz.toRefill();
+        mercedes.toRefill();
+        leningrad.toRefill();
+        a8.toRefill();
+
+
+
+
+
 
         //Создайте новый класс flower.
         //У класса flower есть следующие свойства:
@@ -118,7 +139,6 @@ public class Main {
     private static void printInfo(Flower flower){
         System.out.println("Цветок- " + flower.getFlowerColor() + " , страна- " + flower.getCountry() + ", стоимость штуки- " + flower.getCost() + " рублей , срок стояния- " + flower.lifeSpan);
     }
-
 
 
 }
