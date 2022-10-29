@@ -1,10 +1,9 @@
 package transport;
 
-public class Automobile  extends Driver implements Competing {
-
+public class Truck extends Driver implements Competing {
     private String brend;
-       private String model;
-       private double engineVolume;
+    private String model;
+    private double engineVolume;
 
     public String getBrend() {
         return brend;
@@ -45,7 +44,7 @@ public class Automobile  extends Driver implements Competing {
 
     }
 
-    public Automobile(String brend, String model, double engineVolume) {
+    public Truck(String brend, String model, double engineVolume) {
         super("Сергей");
         this.brend = brend;
         if(brend==null||brend.isBlank()||brend.isEmpty()){
@@ -69,7 +68,7 @@ public class Automobile  extends Driver implements Competing {
 
     @Override
     public String toString() {
-        return "Automobile{" +
+        return "Truck{" +
                 "Марка= '" + brend + '\'' +
                 ", Модель= " + model + '\'' +
                 ", Обьем двигателя= " + engineVolume +
@@ -84,7 +83,7 @@ public class Automobile  extends Driver implements Competing {
 
     @Override
     public void toPitStop() {
-        System.out.println(getModel() + "Захожу на пит-стоп");
+        System.out.println(getModel() +"Захожу на пит-стоп");
     }
 
     @Override
@@ -97,4 +96,3 @@ public class Automobile  extends Driver implements Competing {
         System.out.println("Максимальная скорость");
     }
 }
-

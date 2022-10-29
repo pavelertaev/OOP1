@@ -1,145 +1,31 @@
-import transport.Automobile;
-import transport.Bus;
-import transport.Train;
+import transport.*;
 
 public class Main {
+
     public static void main(String[] args) {
-        //Создайте новый проект в IDEA. Создайте класс «Человек», у которого есть:
-        //
-        //дата рождения,
-        //имя,
-        //город проживания.
-        //Создайте объекты для следующих персон:
-        //Максим из города Минск, которому 35 лет;
-        //Аня из города Москва, которой 29 лет;
-        //Катя из города Калининград, которой 28 лет;
-        //Артем из города Москва, которому 27 лет.
-        //Напишите программу так, чтобы в консоль выводились приветственное сообщение в формате: "Привет! Меня зовут… Я из города… Я родился в… году. Будем знакомы!"
         System.out.println("Задание 1");
-        People maksim = new People("Максим", 1987 ,"Москва" ,"бренд-менеджер");
-        People anya = new People("Аня" , 1993 , "Москва","Методист образовательных программ");
-        People katya = new People("Катя" , 1994 , "Калининград","продакт-менеджер");
-        People artem = new People("Артем" , 1995 , "Москва","деректор по развитию бизнеса");
-        People vladimir = new People("Владимир" ,2001,"Казань","нигде не работает");
-        maksim.privet();
-        anya.privet();
-        katya.privet();
-        artem.privet();
-        vladimir.privet();
-        //Добавьте в поле класса «Человек» новые свойство — «Должность».
-        //
-        //Каждому созданному объекту допишите в поле string  должность:
-        //
-        //Максим работает бренд-менеджером.
-        //Аня работает методистом образовательных программ.
-        //Катя работает продакт-менеджером.
-        //Артем работает директором по развитию бизнеса.
-        //Допишите программу таким образом, чтобы в консоль выводилось приветственное сообщение в формате: "Привет! Меня зовут…
-        // Я из города… Я родился в… году. Я работаю на должности… Будем знакомы!"
-        System.out.println("Задание 2");
-        maksim.privetJob();
-        anya.privetJob();
-        katya.privetJob();
-        artem.privetJob();
-        vladimir.privetJob();
-        //Создайте новый проект в IDEA. Создайте класс «Автомобиль», у которого есть:
-        //
-        //марка,
-        //модель,
-        //объем двигателя в литрах,
-        //цвет кузова,
-        //год производства,
-        //страна сборки.
-        //Создайте объекты для следующих автомобилей:
-        //
-        //Lada Granta, 2015 год выпуска, сборка в России, желтого цвета, объем двигателя — 1,7 л.
-        //Audi A8 50 L TDI quattro, 2020 год выпуска, сборка в Германии, черный цвет кузова, объем двигателя — 3,0 л.
-        //BMW Z8, сборка в Германии в 2021 году, черный цвет кузова, объем — 3,0 л.
-        //Kia Sportage 4-го поколения, 2018 год выпуска, сборка в Южной Корее, цвет кузова — красный, объем двигателя — 2,4 л.
-        //Hyundai Avante, сборка в Южной Корее, цвет кузова — оранжевый, объем двигателя — 1,6 л, год выпуска — 2016.
-        //Напишите программу, которая будет выводить в консоль информацию о каждом автомобиле и все указанные выше характеристики.
-        System.out.println("Задание 3");
-        Automobile granta = new Automobile("Lada","Granta",2015,"Россия","желтый",200,"Бензиновый двигатель",1.6,"х000хх000","автомат","седан",4,"летняя",null,null);
-        Automobile a8 = new Automobile("Audi","A8",2020,"Германия","черный",260,"Бензиновый двигатель",3.0,"х000хх000","автомат","седан",4,"летняя",null,null);
-        Automobile z8 = new Automobile("BMW","Z8",2021,"Германия","черный",270,"Бензиновый двигатель",3.0,"х000хх000","автомат","седан",4,"летняя",null,null);
-        Automobile sportage = new Automobile("Kia","Sportage 4-го поколения",2020,"Южная корея","красный",250,"Бензиновый двигатель",3.0,"х000хх000","автомат","седан",4,"летняя",null,null);
-        Automobile avante = new Automobile("Hyundai","Avante",2016,"Южная корея","оранжевый",220,"Бензиновый двигатель",3.0,"х000хх000","Автомат","седан",4,"летняя",null,null);
-        granta.carInformation();
-        a8.carInformation();
-        z8.carInformation();
-        sportage.carInformation();
-        avante.carInformation();
-        Train lastochka = new Train("Ласточка","В-910",2011,"Россия","Серый",301,"Дизельный двигатель",3500,4,"Белорусский вокзал","Минск Пассажирский",11);
-        Train leningrad = new Train("Ленинград","D-105",2019,"Россия","Зеленый",270,"Дизельный двигатель",1700,5,"Ленинградский вокзал","Ленинград-Пассажирский",8);
-        lastochka.printTrain();
-        leningrad.printTrain();
-        Bus paz = new Bus("Паз","автобус",2008,"Россия","белый",160,"Бензиновый двигатель");
-        Bus ikarus = new Bus("Икарус","автобус",2012,"Россия","желтый",180,"Бензиновый двигатель");
-        Bus mercedes = new Bus("Мерседес","автобус",2015,"германия","серый",200,"");
-        paz.printBus();
-        ikarus.printBus();
-        mercedes.printBus();
-        paz.toRefill();
-        mercedes.toRefill();
-        leningrad.toRefill();
-        a8.toRefill();
+        Automobile audi = new Automobile("Ауди","р8",3.0);
+        Automobile porche = new Automobile("Порше","911",4.0);
+        Automobile mercedes = new Automobile("Мерседес","sls",4.5);
+        Automobile opel = new Automobile("Опель","турбо",3.4);
+        Bus paz = new Bus("Паз","100",5.0);
+        Bus liaz = new Bus("Лиаз","9",4.0);
+        Bus isuzu = new Bus("Исузу","6",3.8);
+        Bus volvo = new Bus("Вольво","5",5.0);
+        Truck kamaz = new Truck("Камаз","2",7.0);
+        Truck belaz = new Truck("Белаз","3",18.0);
+        Truck zil = new Truck("Зил","3",8.0);
+        Truck bmw = new Truck("Бмв","6",8.0);
 
+        Driver.DriverB<Automobile> sergei= new Driver.DriverB<>("Сергей");
+        Driver.DriverC<Truck> artem= new Driver.DriverC<>("Артем");
+        Driver.DriverD<Bus> pavel= new Driver.DriverD<>("Павел");
 
-
-
-
-
-        //Создайте новый класс flower.
-        //У класса flower есть следующие свойства:
-        //цвет цветка (flowerColor);
-        //страна происхождения (country);
-        //стоимость (cost);
-        //срок стояния, указанный в целых днях (lifeSpan).
-        //Цвет, страна происхождения и стоимость — данные, которые изменять нельзя, доступ к ним должен осуществляться только через геттеры и сеттеры.
-        //При этом если цвет цветка не указан или равен null, то по дефолту он должен быть белым.
-        // Если не указана страна происхождения или значение равно null, то значением по умолчанию будет считаться «Россия».
-        //Стоимость цветка должна указываться в дробных числах с двумя знаками после запятой, например 59,99 рублей.
-        // Цена не может быть отрицательной или равной нулю, в противном случае она должна быть равно 1 рублю.
-        //Срок стояния пользователь может указывать сам, но это значение может быть только целочисленным и только положительным числом.
-        // Если срок не указан, то значением по умолчанию будет считаться «3 дня».
-        //Добавьте следующие объекты в данных класс:
-        //Роза обыкновенная из Голландии, стоимость штуки — 35,59 рублей.
-        //Хризантема, стоимость штуки — 15 рублей, срок стояния — 5 дней.
-        //Пион из Англии, стоимость штуки — 69,9 рублей, срок стояния — 1 день.
-        //Гипсофила, страна происхождения — Турция, стоимость штуки — 19,5 рублей, срок стояния — 10 дней.
-        System.out.println("Задание 4");
-        Flower roza = new Flower("Роза обыкновенна","Голландия",35.59,0);
-        Flower chrizantema = new Flower("Хризантема",null,15.00,5);
-        Flower pion = new Flower("Пион","Англия",69.90,1);
-        Flower gipsofila = new Flower("Гипсофила","Турция",19.50,10);
-        roza.flowerInformation();
-        chrizantema.flowerInformation();
-        pion.flowerInformation();
-        gipsofila.flowerInformation();
-
-        printCostFlowers(roza,roza,roza,gipsofila,chrizantema);
-
+        System.out.println("Водитель - " + sergei.getName() + " ,управляет автомобилем - " + audi + " и будет учавствовать в заезде.");
+        System.out.println("Водитель - " + artem.getName() + " ,управляет автомобилем - " + zil + " и будет учавствовать в заезде.");
+        System.out.println("Водитель - " + pavel.getName() + " ,управляет автомобилем - " + paz + " и будет учавствовать в заезде.");
 
     }
-    public static void printCostFlowers(Flower...flowers){
-        double totalCost= 0;
-        int minLifeSpan=Integer.MAX_VALUE;
-        for(Flower flower : flowers){
-            if(flower.lifeSpan<minLifeSpan){
-                minLifeSpan= flower.lifeSpan;
-            }
-            totalCost += flower.getCost();
-            printInfo(flower);
-        }
-        totalCost = totalCost * 1.1;
-        System.out.println(" Стоимость букета " + totalCost);
-        System.out.println("Срок стояния " + minLifeSpan);
-
-    }
-    private static void printInfo(Flower flower){
-        System.out.println("Цветок- " + flower.getFlowerColor() + " , страна- " + flower.getCountry() + ", стоимость штуки- " + flower.getCost() + " рублей , срок стояния- " + flower.lifeSpan);
-    }
-
 
 }
 
