@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67fc672-66eb-4609-aa3f-14add21d2eed" name="Changes" comment="Задание выполнено ожидает проверки">
-      <change afterPath="$PROJECT_DIR$/src/transport/Competing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/DriverB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/DriverC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/DriverD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/DriverLicense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transport/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Automobile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Train.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Transport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,9 @@
       <workItem from="1666437805363" duration="189000" />
       <workItem from="1666625291157" duration="5974000" />
       <workItem from="1666631285073" duration="7425000" />
-      <workItem from="1667040201581" duration="7549000" />
+      <workItem from="1667040201581" duration="8092000" />
+      <workItem from="1667126037642" duration="1299000" />
+      <workItem from="1667131443573" duration="1938000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит">
       <created>1666019832630</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666639731140</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Задание выполнено ожидает проверки">
+      <created>1667049894146</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667049894146</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

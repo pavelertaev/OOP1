@@ -17,14 +17,15 @@ public class Main {
         Truck zil = new Truck("Зил","3",8.0);
         Truck bmw = new Truck("Бмв","6",8.0);
 
-        Driver.DriverB<Automobile> sergei= new Driver.DriverB<>("Сергей");
-        Driver.DriverC<Truck> artem= new Driver.DriverC<>("Артем");
-        Driver.DriverD<Bus> pavel= new Driver.DriverD<>("Павел");
+        Driver<DriverB> sergei= new Driver<>("Сергей",new DriverB(),"5");
+        Driver<DriverC> artem= new Driver<>("Артем",new DriverC(),"4");
+        Driver<DriverD> pavel= new Driver<>("Павел",new DriverD(),"3");
 
         System.out.println("Водитель - " + sergei.getName() + " ,управляет автомобилем - " + audi + " и будет учавствовать в заезде.");
         System.out.println("Водитель - " + artem.getName() + " ,управляет автомобилем - " + zil + " и будет учавствовать в заезде.");
         System.out.println("Водитель - " + pavel.getName() + " ,управляет автомобилем - " + paz + " и будет учавствовать в заезде.");
 
+        sergei.startMoving(audi);
     }
 
 }

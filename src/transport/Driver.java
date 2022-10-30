@@ -1,9 +1,10 @@
 package transport;
 
-public class Driver <B extends Automobile , C extends Truck , D extends Bus> {
+  public class Driver <M extends DriverLicense> {
     private String name;
-    private boolean driverLicense;
+    M driverLicense;
     private String experience;
+
 
 
     public String getName() {
@@ -27,7 +28,7 @@ public class Driver <B extends Automobile , C extends Truck , D extends Bus> {
         }
     }
 
-    public Driver(String name, boolean driverLicense, String experience) {
+    public Driver(String name, M driverLicense, String experience) {
         this.name = name;
         if(name==null||name.isEmpty()||name.isEmpty()){
             this.name="Водитель не указан";
@@ -47,15 +48,15 @@ public class Driver <B extends Automobile , C extends Truck , D extends Bus> {
 
     }
 
-    public boolean isDriverLicense() {
-        return true;
-    }
+      public M getDriverLicense() {
+          return driverLicense;
+      }
 
-    public void setDriverLicense(boolean driverLicense) {
-        this.driverLicense = true;
-    }
+      public void setDriverLicense(M driverLicense) {
+          this.driverLicense = driverLicense;
+      }
 
-    public String getExperience() {
+      public String getExperience() {
         return experience;
     }
 
@@ -68,48 +69,29 @@ public class Driver <B extends Automobile , C extends Truck , D extends Bus> {
 
     }
 
-    public void toStartMoving(){
-        System.out.println("Начинаю движение");
-    }
-    public void toStop(){
-        System.out.println("Заканчиваю движение");
-    }
-    public void toRefuel(){
-        System.out.println("Заправляюсь");
-    }
+      public void startMoving(Car car) {
+          if (driverLicense.canDrive(car)) {
+              car.startMoving();
+          } else {
+              System.out.println("Я не могу водоить "+car.getClass());
+          }
+      }
 
-    public static class DriverB <B extends Automobile>{
-        private String name;
+      public void finishMoving(Car car){
+          if (driverLicense.canDrive(car)) {
+              car.stopMoving();
+          } else {
+              System.out.println("Я не могу водить "+car.getClass());
+          }
+      }
 
-        public DriverB(String name) {
-            this.name = name;
-        }
+      public void refuel(Car car){
 
-        public String getName() {
-            return name;
-        }
-    }
-    public static class DriverC <C extends Truck>{
-        private String name;
-
-        public DriverC(String name) {
-            this.name = name;
-        }
-
-        public String getName() {
-            return name;
-        }
-    }
-    public static class DriverD <D extends Bus>{
-        private String name;
-
-        public DriverD(String name) {
-            this.name = name;
-        }
-
-        public String getName() {
-            return name;
-        }
-    }
+          if (driverLicense.canDrive(car)) {
+              System.out.println("Заправлюсь");
+          } else {
+              System.out.println("Я не могу водить "+car.getClass());
+          }
+      }
 
 }
