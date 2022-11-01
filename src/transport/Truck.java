@@ -1,8 +1,20 @@
 package transport;
 
 public class Truck extends Car implements Competing {
-    public Truck(String brand, String model, double engVolume) {
+    private Weight weightType;
+
+
+
+    public Truck(String brand, String model, double engVolume, Weight weightType) {
         super(brand, model, engVolume);
+        this.weightType=weightType;
+    }
+    public Weight getWeightType() {
+        return weightType;
+    }
+
+    public void setWeightType(Weight weightType) {
+        this.weightType = weightType;
     }
     public void toRefuel(){
         System.out.println("Заправляюсь");
@@ -30,4 +42,14 @@ public class Truck extends Car implements Competing {
     public void toMaxSpeed() {
         System.out.println("Максимальная скорость");
     }
+    public void printType() {
+        if(weightType==null){
+            System.out.println("Данных по авто недостаточно");
+        }else{
+            String from = weightType.getFrom() == null ? "" : " от " + weightType.getFrom() + " ";
+            String to = weightType.getTo() == null ? " " : " до " + weightType.getTo() + " ";
+            System.out.println("Грузоподьемность авто -  - " + from + to);
+        }
+    }
+
 }

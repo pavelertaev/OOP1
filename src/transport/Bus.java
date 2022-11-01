@@ -1,10 +1,21 @@
 package transport;
 
 public class Bus extends Car implements Competing {
-    public Bus(String brand, String model, double engVolume) {
+    private Capacity seat;
+
+
+
+    public Bus(String brand, String model, double engVolume, Capacity seat) {
         super(brand, model, engVolume);
+        this.seat= seat;
+    }
+    public Capacity getSeat() {
+        return seat;
     }
 
+    public void setSeat(Capacity seat) {
+        this.seat = seat;
+    }
     public void toRefuel(){
         System.out.println("Заправляюсь");
     }
@@ -31,6 +42,13 @@ public class Bus extends Car implements Competing {
     public void toMaxSpeed() {
         System.out.println("Максимальная скорость");
 
+    }
+    public void printType() {
+        if(seat==null){
+            System.out.println("Данных по авто недостаточно");
+        }else{
+            System.out.println("Вместимость автобуса от - " + seat.getFrom() + " до " + seat.getTo() );
+        }
     }
 
 }

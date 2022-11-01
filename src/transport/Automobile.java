@@ -1,11 +1,21 @@
 package transport;
 
 public class Automobile extends Car implements Competing {
+    private TypeBody body;
 
-    public Automobile(String brand, String model, double engVolume) {
+
+
+    public Automobile(String brand, String model, double engVolume, TypeBody body) {
         super(brand, model, engVolume);
+        this.body=body;
+    }
+    public TypeBody getBody() {
+        return body;
     }
 
+    public void setBody(TypeBody body) {
+        this.body = body;
+    }
 
     public void toRefuel(){
         System.out.println("Заправляюсь");
@@ -18,6 +28,15 @@ public class Automobile extends Car implements Competing {
     @Override
     public void stopMoving() {
         System.out.println("Заканчиваю движение");
+    }
+
+    @Override
+    public void printType() {
+        if(body==null){
+            System.out.println("Данных по авто недостаточно");
+        }else{
+            System.out.println("Тип кузова авто - " + body);
+        }
     }
 
 
