@@ -23,6 +23,8 @@ public abstract class Car {
     public abstract void stopMoving();
     public abstract void printType();
 
+    public abstract boolean service();
+
     public String getBrand() {
         return brand;
     }
@@ -34,6 +36,7 @@ public abstract class Car {
     public double getEngVolume() {
         return engVolume;
     }
+
 
     public void setEngVolume(double engVolume) {
         if (engVolume > 0) {

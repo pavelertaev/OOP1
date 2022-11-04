@@ -26,11 +26,30 @@ public class Main {
        // System.out.println("Водитель - " + pavel.getName() + " ,управляет автомобилем - " + paz + " и будет учавствовать в заезде.");
 
         //sergei.startMoving(audi);
+        zil.service();
+        audi.service();
 
-        zil.printType();
-        paz.printType();
-        opel.printType();
+       // zil.printType();
+       // paz.printType();
+        //opel.printType();
+        service(audi,porche,mercedes,opel,paz,liaz,isuzu,volvo,kamaz,belaz,zil,bmw);
     }
+
+    private static void service(Car...cars) {
+        for (int i = 0; i < cars.length-1; i++) {
+            if (!cars[i].service()) {
+                try{
+                throw new RuntimeException("Автомобиль " + cars[i].getBrand() + cars[i].getModel() + "не прошел диагностику");
+            }catch (RuntimeException e ){
+                    System.out.println(e.getMessage());
+                }
+
+            }
+
+        }
+
+    }
+
 
 }
 

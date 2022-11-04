@@ -52,4 +52,9 @@ public class Truck extends Car implements Competing {
         }
     }
 
+    @Override
+    public boolean service() {
+      return Math.random()>0.6;
+    }
+
 }

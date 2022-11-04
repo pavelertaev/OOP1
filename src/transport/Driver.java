@@ -35,7 +35,7 @@ package transport;
         }else{
             this.name=name;
         }
-        this.driverLicense = driverLicense;
+        setDriverLicense(driverLicense);
 
         this.experience = experience;
         if(experience==null||experience.isEmpty()||experience.isEmpty()){
@@ -53,7 +53,11 @@ package transport;
       }
 
       public void setDriverLicense(M driverLicense) {
-          this.driverLicense = driverLicense;
+         if(driverLicense==null){
+             throw new RuntimeException("Нужно указать категорию прав");
+         }else {
+             this.driverLicense=driverLicense;
+         }
       }
 
       public String getExperience() {
@@ -93,5 +97,6 @@ package transport;
               System.out.println("Я не могу водить "+car.getClass());
           }
       }
+
 
 }
