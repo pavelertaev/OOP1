@@ -1,7 +1,10 @@
 package transport;
 
+import java.util.ArrayList;
+
 public class Bus extends Car implements Competing {
     private Capacity seat;
+
 
 
 
@@ -43,6 +46,9 @@ public class Bus extends Car implements Competing {
         System.out.println("Максимальная скорость");
 
     }
+
+
+
     public void printType() {
         if(seat==null){
             System.out.println("Данных по авто недостаточно");
@@ -55,6 +61,11 @@ public class Bus extends Car implements Competing {
     public boolean service() {
         System.out.println("Автобус" + getBrand() + getModel() + "диагностику не проходит");
         return true;
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Автобус " + getBrand() + getModel() + " починен");
     }
 
 }

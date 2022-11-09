@@ -1,7 +1,10 @@
 package transport;
 
+import java.util.ArrayList;
+
 public class Truck extends Car implements Competing {
     private Weight weightType;
+
 
 
 
@@ -55,6 +58,11 @@ public class Truck extends Car implements Competing {
     @Override
     public boolean service() {
       return Math.random()>0.6;
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Грузовик " + getBrand() + getModel() + " починен");
     }
 
 }

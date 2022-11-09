@@ -1,11 +1,23 @@
 package transport;
 
-  public class Driver <M extends DriverLicense> {
+import java.util.ArrayList;
+
+public class Driver <M extends DriverLicense> {
     private String name;
     M driverLicense;
     private String experience;
+    private ArrayList<M> Driver;
 
 
+    @Override
+    public String toString() {
+        return "Driver{" +
+                "name='" + name + '\'' +
+                ", driverLicense=" + driverLicense +
+                ", experience='" + experience + '\'' +
+                ", Driver=" + Driver +
+                '}';
+    }
 
     public String getName() {
         return name;

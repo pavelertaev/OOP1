@@ -5,6 +5,8 @@ public class DriverB implements DriverLicense{
         return (car.getClass()==Automobile.class);
     }
 
-
-
+    @Override
+    public String toString() {
+        return "DriverB{}";
+    }
 }

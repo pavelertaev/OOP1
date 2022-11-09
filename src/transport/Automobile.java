@@ -1,7 +1,11 @@
 package transport;
 
+import java.util.ArrayList;
+
 public class Automobile extends Car implements Competing {
     private TypeBody body;
+
+
 
 
 
@@ -16,6 +20,8 @@ public class Automobile extends Car implements Competing {
     public void setBody(TypeBody body) {
         this.body = body;
     }
+
+
 
     public void toRefuel(){
         System.out.println("Заправляюсь");
@@ -42,6 +48,11 @@ public class Automobile extends Car implements Competing {
     @Override
     public boolean service() {
         return Math.random()>0.5;
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Машина " + getBrand() + getModel() + " починена");
     }
 
 
