@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67fc672-66eb-4609-aa3f-14add21d2eed" name="Changes" comment="Задание выполнено ожидает проверки">
-      <change afterPath="$PROJECT_DIR$/src/transport/Mechanik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/Sponsor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/transport/Station.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Automobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/DriverB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/DriverB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/DriverC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/DriverC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/DriverD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/DriverD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +89,7 @@
       <workItem from="1667570567520" duration="1749000" />
       <workItem from="1667584945751" duration="1038000" />
       <workItem from="1667923761049" duration="5706000" />
+      <workItem from="1668019089194" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит">
       <created>1666019832630</created>
@@ -169,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667585975746</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Задание выполнено ожидает проверки">
+      <created>1668019219853</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668019219853</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

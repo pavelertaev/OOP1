@@ -37,6 +37,13 @@ public class Automobile extends Car implements Competing {
     }
 
     @Override
+    public String toString() {
+        return "Automobile{" +
+                "body=" + body +
+                "} " + super.toString();
+    }
+
+    @Override
     public void printType() {
         if(body==null){
             System.out.println("Данных по авто недостаточно");

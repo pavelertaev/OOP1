@@ -2,6 +2,7 @@ import transport.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 public class Main {
 
@@ -51,6 +52,15 @@ public class Main {
 
         List <Car> cars = new ArrayList<>();
         printCar(audi);
+
+        Station<Car> tehno = new Station<>("Техно");
+        tehno.addStation(audi);
+        tehno.addStation(porche);
+        tehno.addStation(mercedes);
+        tehno.addStation(kamaz);
+        tehno.addStation(zil);
+        tehno.spendStation();
+
 
 
     }

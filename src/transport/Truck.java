@@ -56,6 +56,13 @@ public class Truck extends Car implements Competing {
     }
 
     @Override
+    public String toString() {
+        return "Truck{" +
+                "weightType=" + weightType +
+                "} " + super.toString();
+    }
+
+    @Override
     public boolean service() {
       return Math.random()>0.6;
     }

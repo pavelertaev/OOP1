@@ -59,6 +59,18 @@ public abstract class Car {
     }
 
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", drivers=" + drivers +
+                ", mechaniks=" + mechaniks +
+                ", sponsors=" + sponsors +
+                ", engVolume=" + engVolume +
+                '}';
+    }
+
     public void setEngVolume(double engVolume) {
         if (engVolume > 0) {
             this.engVolume = engVolume;
