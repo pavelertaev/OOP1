@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d67fc672-66eb-4609-aa3f-14add21d2eed" name="Changes" comment="" />
+    <list default="true" id="d67fc672-66eb-4609-aa3f-14add21d2eed" name="Changes" comment="Задание выполнено ожидает проверки">
+      <change afterPath="$PROJECT_DIR$/src/transport/CarList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Automobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transport/Car.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GGfFDUeY5VprGznM9ojwBWcjhm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,13 +39,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/паша/IdeaProjects/OOP1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -45,8 +71,121 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666019737776</updated>
+      <workItem from="1666019739093" duration="5990000" />
+      <workItem from="1666197442499" duration="4499000" />
+      <workItem from="1666201968393" duration="8000" />
+      <workItem from="1666202373410" duration="40000" />
+      <workItem from="1666283503601" duration="44000" />
+      <workItem from="1666426185068" duration="293000" />
+      <workItem from="1666426533616" duration="1241000" />
+      <workItem from="1666428113632" duration="135000" />
+      <workItem from="1666428263468" duration="7287000" />
+      <workItem from="1666437805363" duration="189000" />
+      <workItem from="1666625291157" duration="5974000" />
+      <workItem from="1666631285073" duration="7425000" />
+      <workItem from="1667040201581" duration="8092000" />
+      <workItem from="1667126037642" duration="1299000" />
+      <workItem from="1667131443573" duration="2919000" />
+      <workItem from="1667317119106" duration="7533000" />
+      <workItem from="1667565464192" duration="44000" />
+      <workItem from="1667570567520" duration="1749000" />
+      <workItem from="1667584945751" duration="1038000" />
+      <workItem from="1667923761049" duration="5706000" />
+      <workItem from="1668019089194" duration="1826000" />
+      <workItem from="1668071437532" duration="73000" />
+      <workItem from="1668075224498" duration="4221000" />
+      <workItem from="1668107342114" duration="4959000" />
+      <workItem from="1668181477407" duration="2015000" />
     </task>
+    <task id="LOCAL-00001" summary="первый коммит">
+      <created>1666019832630</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666019832630</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1 задание">
+      <created>1666023980333</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666023980333</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Задание выполнено ожидает проверки">
+      <created>1666027744625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666027744625</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Задание выполнено ожидает проверки">
+      <created>1666426642824</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666426642824</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Задание выполнено ожидает проверки">
+      <created>1666437825730</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666437825731</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Задание выполнено ожидает проверки">
+      <created>1666639731140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666639731140</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Задание выполнено ожидает проверки">
+      <created>1667049894146</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667049894146</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Задание выполнено ожидает проверки">
+      <created>1667133686132</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667133686132</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Задание выполнено ожидает проверки">
+      <created>1667332873735</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667332873735</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Задание выполнено ожидает проверки">
+      <created>1667585975746</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667585975746</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Задание выполнено ожидает проверки">
+      <created>1668019219853</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668019219853</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Задание выполнено ожидает проверки">
+      <created>1668020315865</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668020315865</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -58,5 +197,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="первый коммит" />
+    <MESSAGE value="1 задание" />
+    <MESSAGE value="Задание выполнено ожидает проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание выполнено ожидает проверки" />
   </component>
 </project>
