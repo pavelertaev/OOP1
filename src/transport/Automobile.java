@@ -1,10 +1,12 @@
 package transport;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 public class Automobile extends Car implements Competing {
     private TypeBody body;
-
 
 
 
@@ -13,6 +15,7 @@ public class Automobile extends Car implements Competing {
         super(brand, model, engVolume);
         this.body=body;
     }
+
     public TypeBody getBody() {
         return body;
     }
@@ -22,6 +25,18 @@ public class Automobile extends Car implements Competing {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Automobile that = (Automobile) o;
+        return body == that.body;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(body);
+    }
 
     public void toRefuel(){
         System.out.println("Заправляюсь");

@@ -1,5 +1,5 @@
 public class People {
-    String name;
+     private String name;
     private int dateOfBirth;
     private String city;
     String job;
